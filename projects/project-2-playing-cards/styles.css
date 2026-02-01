@@ -1,0 +1,74 @@
+:root {
+  --card-width: 120px;
+  --card-height: 180px;
+  --border-color: #222;
+  --card-bg: #ffffff;
+  --shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f5f7fb;
+}
+
+/* Container */
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Card */
+
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Small professional interaction */
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Positions inside card */
+
+.left {
+  align-self: flex-start;
+  font-weight: 600;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.right {
+  align-self: flex-end;
+  font-weight: 600;
+}
