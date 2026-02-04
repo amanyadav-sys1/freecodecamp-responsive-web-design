@@ -1,4 +1,4 @@
-/* General Layout */
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -14,7 +14,7 @@ th, td {
     text-align: left;
 }
 
-/* 1. Row Backgrounds (Attribute Selectors) */
+
 tr[class="read"] {
     background-image: linear-gradient(to right, #e0f7fa, #fff);
 }
@@ -27,42 +27,41 @@ tr[class="in-progress"] {
     background-image: linear-gradient(to right, #fff3e0, #fff);
 }
 
-/* 2. Display property for all spans */
+
 span {
     display: inline-block;
 }
 
-/* 3. Status Badges (Nested Attribute Selectors) */
-/* Target status inside to-read rows */
+
 tr[class="to-read"] span[class="status"] {
     border: 1px solid #607d8b;
     background-image: linear-gradient(#cfd8dc, #eceff1);
     border-radius: 4px;
 }
 
-/* Target status inside read rows */
+
 tr[class="read"] span[class="status"] {
     border: 1px solid #4caf50;
     background-image: linear-gradient(#c8e6c9, #e8f5e9);
     border-radius: 4px;
 }
 
-/* Target status inside in-progress rows */
+
 tr[class="in-progress"] span[class="status"] {
     border: 1px solid #ff9800;
     background-image: linear-gradient(#ffe0b2, #fff3e0);
     border-radius: 4px;
 }
 
-/* 4. Sizing for Status and Rate wrappers */
+
 span[class="status"], 
 span[class^="rate"] {
     height: 30px;
-    width: 100px; /* Arbitrary width to pass test */
+    width: 100px;
     padding: 5px;
 }
 
-/* 5. Styling the Rate Circles (Direct children) */
+
 span[class^="rate"] > span {
     border: 1px solid #333;
     border-radius: 50%;
@@ -72,22 +71,16 @@ span[class^="rate"] > span {
     background-color: #eee;
 }
 
-/* --- FIX FOR THE FAILING TESTS --- */
 
-/* Fail 48 & 49: Target first descendant of "one".
-   Use ~= for "word" match. */
 span[class~="one"] span:first-child {
     background-image: linear-gradient(#ffeb3b, #fbc02d);
 }
 
-/* Fail 50 & 51: Target first two descendants of "two". 
-   Explicitly selecting first-child and nth-child(2). */
 span[class~="two"] span:first-child,
 span[class~="two"] span:nth-child(2) {
     background-image: linear-gradient(#ffeb3b, #fbc02d);
 }
 
-/* Fail 52 & 53: Target all descendants of "three". */
 span[class~="three"] span {
     background-image: linear-gradient(#ffeb3b, #fbc02d);
 }
