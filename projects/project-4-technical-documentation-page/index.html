@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Mastery Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Flexbox Mastery</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Flex_Container">Flex Container</a>
+        <a class="nav-link" href="#Flex_Direction">Flex Direction</a>
+        <a class="nav-link" href="#Justify_Content">Justify Content</a>
+        <a class="nav-link" href="#Align_Items">Align Items</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+            <p>It was designed to provide a more efficient way to lay out, align, and distribute space among items in a container.</p>
+            <code>display: flex;</code>
+        </section>
+
+        <section class="main-section" id="Flex_Container">
+            <header>Flex Container</header>
+            <p>To start using Flexbox, you must define a container element as a flex box.</p>
+            <p>This is done by setting the display property to flex or inline-flex.</p>
+            <code>.container { display: flex; }</code>
+            <ul>
+                <li>The container becomes the flex parent.</li>
+                <li>The direct children become flex items.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Flex_Direction">
+            <header>Flex Direction</header>
+            <p>The flex-direction property defines which direction the container wants to stack the flex items.</p>
+            <code>flex-direction: column-reverse;</code>
+            <p>Common values include row, row-reverse, column, and column-reverse.</p>
+            <ul>
+                <li>Row: left to right (default).</li>
+                <li>Column: top to bottom.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Justify_Content">
+            <header>Justify Content</header>
+            <p>The justify-content property is used to align the flex items along the main axis.</p>
+            <code>justify-content: center;</code>
+            <p>It helps distribute extra free space left over when either all the flex items on a line are inflexible.</p>
+            <ul>
+                <li>Space-between: items are evenly distributed.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Align_Items">
+            <header>Align Items</header>
+            <p>This defines the default behavior for how flex items are laid out along the cross axis.</p>
+            <code>align-items: stretch;</code>
+            <p>Think of it as the justify-content version for the cross-axis (perpendicular to the main-axis).</p>
+            <ul>
+                <li>Stretch: Fill the container (default).</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
