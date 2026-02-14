@@ -1,58 +1,94 @@
-# FreeCodeCamp – Responsive Web Design Projects
+# freeCodeCamp – Responsive Web Design Projects
 
-This repository contains projects completed as part of the  
-**FreeCodeCamp Responsive Web Design Certification**.
+This repository contains my completed projects for the **freeCodeCamp – Responsive Web Design Certification**.
 
-I am currently working through the certification and continuously adding new projects to this repository.  
-*(Certificate link will be added after completion.)*
+All projects are built using only **HTML and CSS**, focusing on responsive layouts, accessibility and clean structure.
 
 ---
 
-## 📁 Projects Included
+## 📁 Projects
 
 ### 1. Survey Form
-A responsive survey form built using semantic HTML and modern CSS.
+📂 Folder: `projects/project-1-survey-form`
 
-**Features**
-- Accessible form structure
-- Proper labels and input validation
-- Responsive layout for different screen sizes
+A responsive survey form with proper labels, inputs, validation and layout.
 
----
-
-### 2. Playing Cards Layout
-A responsive playing cards layout built using **Flexbox**.
-
-**Features**
-- Flexbox-based card layout
-- Centered and wrapping cards
-- Individual card sections aligned using flex item properties
-- Clean and scalable structure
+**Concepts used**
+- HTML forms
+- Labels & inputs
+- Basic layout and spacing
+- Responsive structure
 
 ---
 
-## 🛠 Technologies Used
+### 2. Tribute Page
+📂 Folder: `projects/project-2-tribute-page`
 
-- HTML5  
-- CSS3 (Flexbox)
+A simple responsive tribute page with structured content and images.
+
+**Concepts used**
+- Semantic HTML
+- Image handling
+- Page structure
+- Responsive layout
+
+---
+
+### 3. Technical Documentation Page
+📂 Folder: `projects/project-3-technical-documentation-page`
+
+A documentation-style layout with a fixed navigation section.
+
+**Concepts used**
+- Sidebar navigation
+- Internal page links
+- CSS layout techniques
+- Media queries
+
+---
+
+### 4. Product Landing Page
+📂 Folder: `projects/project-4-product-landing-page`
+
+A landing page layout for a product with sections, call-to-action and responsive design.
+
+**Concepts used**
+- Flexbox
+- Page sections
+- Responsive layout
+- Embedded media
+
+---
+
+### 5. Product Landing Page (Final Project)
+📂 Folder: `projects/project-5-product-landing-page`
+
+My final Product Landing Page project built as part of the certification.
+
+**Concepts used**
+- Flexbox layout
+- CSS custom properties (variables)
+- Responsive design using media queries
+- Clean and structured HTML
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Flexbox
+- Media Queries
+- CSS Variables
 
 ---
 
 ## 🎯 Goal
 
-My goal is to complete the **FreeCodeCamp Responsive Web Design Certification** and build a strong front-end foundation for future web and AI-based projects.
-
-*(I am currently pursuing B.Tech in CSE with specialization in AI & ML and aiming for international opportunities.)*
+This repository is part of my learning journey toward becoming a front-end and full-stack developer and preparing for software roles in the future.
 
 ---
 
-## 📌 Repository Status
+## 📌 Certification
 
-This repository will be updated as I complete more projects from the FreeCodeCamp curriculum.
-
----
-
-## 📄 License
-
-This repository is licensed under the MIT License.  
-See the [LICENSE](LICENSE) file for more details.
+freeCodeCamp – Responsive Web Design Certification
